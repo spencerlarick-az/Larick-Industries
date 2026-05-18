@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Inter', sans-serif; display: flex; height: 100vh; }
+        .auth-image { flex: 1; background: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1200') center/cover; }
+        .auth-form-container { width: 450px; padding: 60px; display: flex; flex-direction: column; justify-content: center; }
+        .logo { font-weight: bold; margin-bottom: 40px; letter-spacing: 2px; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 30px; font-size: 0.9rem; }
+        input { width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #eee; background: #fcfcfc; box-sizing: border-box;}
+        .btn-submit { background: black; color: white; width: 100%; padding: 15px; border: none; cursor: pointer; margin-top: 10px; }
+        .switch-mode { margin-top: 20px; font-size: 0.85rem; text-align: center; }
+        .switch-mode a { color: black; font-weight: bold; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="auth-image"></div>
+    <div class="auth-form-container">
+        <div class="logo">LARICK INDUSTRIES</div>
+        <h2>Créer un compte</h2>
+        <p>Rejoignez Larick Industries pour gérer facilement vos réservations.</p>
+        
+        <form action="#" method="POST">
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Adresse Email" required>
+            <input type="password" placeholder="Mot de passe" required>
+            <button type="submit" class="btn-submit">S'inscrire</button>
+        </form>
+        
+        <div class="switch-mode">
+            Déjà un compte ? <a href="log in.html">Se connecter</a>
+        </div>
+        <div style="margin-top: 40px; text-align: center;">
+            <a href="index.html" style="font-size: 0.8rem; color: #999; text-decoration: none;">← Retour à l'accueil</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Help - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #ffffff; --light-gray: #f9f9f9; }
+        body { margin: 0; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid #eee; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; }
+        nav a { text-decoration: none; color: black; font-size: 0.9rem; }
+        .auth-links { font-size: 0.9rem; }
+        .auth-links a { color: black; text-decoration: none; margin-left: 15px; font-weight: 500; }
+        
+        .container { padding: 60px 5%; max-width: 800px; margin: auto; flex-grow: 1; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 20px; }
+        
+        .faq-item { margin-bottom: 25px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .faq-question { font-weight: 600; margin-bottom: 10px; cursor: pointer; display: flex; justify-content: space-between; }
+        .faq-answer { font-size: 0.9rem; color: #666; line-height: 1.6; }
+
+        footer { background: var(--light-gray); padding: 40px 5%; text-align: center; }
+        footer a { margin: 0 15px; color: #666; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight:bold; letter-spacing: 1px;">LARICK INDUSTRIES</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="salles.html">Salles</a></li>
+                <li><a href="materiel.html">Matériel</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="login.html">Log in</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Centre d'Aide</h1>
+        <p style="color:#666; margin-bottom:40px;">Trouvez rapidement des réponses à vos questions.</p>
+        
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">Comment modifier ma réservation ? <span>+</span></div>
+                <div class="faq-answer">Vous pouvez modifier votre réservation jusqu'à 48h avant l'événement via votre tableau de bord.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Le matériel est-il installé par vos soins ? <span>+</span></div>
+                <div class="faq-answer">Oui, nos techniciens préparent la salle et testent le matériel avant votre arrivée.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Quels sont les modes de paiement acceptés ? <span>+</span></div>
+                <div class="faq-answer">Nous acceptons les cartes bancaires, les virements professionnels et les paiements via Stripe.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Comment annuler une réservation ? <span>+</span></div>
+                <div class="faq-answer">Les annulations peuvent se faire directement depuis l'onglet réservations de votre compte, sous réserve de nos conditions d'annulation.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div style="margin-bottom:20px;">
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+            <a href="#">Mentions Légales</a>
+        </div>
+        <p style="font-size: 0.8rem; color: #999;">© 2026 Larick Industries. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

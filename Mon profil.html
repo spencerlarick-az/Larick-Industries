@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Profil - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #ffffff; --text-main: #1a1a1a; --accent: #000000; --light-gray: #f9f9f9; --border: #eee; }
+        body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text-main); display: flex; flex-direction: column; min-height: 100vh; }
+        
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid var(--border); }
+        .brand { font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+        nav a { text-decoration: none; color: var(--text-main); font-size: 0.85rem; }
+        .auth-buttons { display: flex; gap: 15px; }
+        .btn-signup { background: var(--accent); color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; }
+
+        .user-container { flex: 1; padding: 60px 5%; max-width: 1200px; margin: 0 auto; width: 100%; box-sizing: border-box; }
+        .dashboard-grid { display: grid; grid-template-columns: 250px 1fr; gap: 60px; }
+        
+        .side-menu { border-right: 1px solid var(--border); }
+        .side-menu ul { list-style: none; padding: 0; }
+        .side-menu li { margin-bottom: 15px; }
+        .side-menu a { text-decoration: none; color: #666; font-size: 0.95rem; }
+        .side-menu a.active { color: var(--accent); font-weight: 600; border-left: 2px solid var(--accent); padding-left: 10px; }
+
+        .profile-form { max-width: 600px; }
+        .form-group { margin-bottom: 25px; }
+        label { display: block; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; color: #888; }
+        input { width: 100%; padding: 12px; border: 1px solid var(--border); background: var(--light-gray); font-family: inherit; }
+        .btn-save { background: black; color: white; border: none; padding: 12px 30px; cursor: pointer; font-weight: 600; margin-top: 10px; }
+
+        footer { background: var(--light-gray); padding: 40px 5%; text-align: center; border-top: 1px solid var(--border); }
+        .footer-nav a { margin: 0 15px; color: #666; text-decoration: none; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Larick Industries</div>
+        <nav><ul><li><a href="index.html">Home</a></li><li><a href="salles.html">Salles</a></li><li><a href="materiel.html">Matériel</a></li></ul></nav>
+        <div class="auth-buttons"><a href="login.html" style="text-decoration:none; color:black; align-self:center; font-size:0.85rem;">Log in</a><a href="signup.html" class="btn-signup">Sign up</a></div>
+    </header>
+
+    <main class="user-container">
+        <div class="dashboard-grid">
+            <aside class="side-menu">
+                <ul>
+                    <li><a href="dashboard.html">Mes Réservations</a></li>
+                    <li><a href="profil.html" class="active">Mon Profil</a></li>
+                    <li><a href="facturation.html">Facturation</a></li>
+                    <li><a href="#" style="color: #c0392b;">Déconnexion</a></li>
+                </ul>
+            </aside>
+
+            <section class="profile-form">
+                <h1 style="font-family: 'Playfair Display', serif; margin-bottom: 30px;">Paramètres du Profil</h1>
+                <form>
+                    <div class="form-group">
+                        <label>Nom Complet</label>
+                        <input type="text" value="Jean-Luc Larick">
+                    </div>
+                    <div class="form-group">
+                        <label>Adresse Email</label>
+                        <input type="email" value="jeanluc@exemple.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Numéro de Téléphone</label>
+                        <input type="tel" value="+33 6 00 00 00 00">
+                    </div>
+                    <hr style="border:0; border-top:1px solid #eee; margin: 40px 0;">
+                    <h2 style="font-family: 'Playfair Display', serif; font-size: 1.5rem;">Sécurité</h2>
+                    <div class="form-group">
+                        <label>Nouveau mot de passe</label>
+                        <input type="password" placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn-save">Enregistrer les modifications</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav"><a href="contact.html">Contact</a><a href="help.html">Help</a></div>
+        <p style="font-size:0.75rem; color:#999;">© 2026 Larick Industries</p>
+    </footer>
+</body>
+</html>

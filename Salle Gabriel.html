@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Salon Gabriel - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #ffffff; --text-main: #1a1a1a; --accent: #000000; --light-gray: #f9f9f9; --border: #eee; }
+        body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text-main); line-height: 1.6; }
+        
+        /* Header Standard */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid var(--border); }
+        .brand { font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+        nav a { text-decoration: none; color: var(--text-main); font-size: 0.85rem; }
+        .auth-buttons { display: flex; gap: 15px; align-items: center; }
+        .btn-login { text-decoration: none; color: var(--text-main); font-size: 0.85rem; }
+        .btn-signup { background: var(--accent); color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; }
+
+        /* Contenu de la salle */
+        .room-container { padding: 60px 5%; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 400px; gap: 60px; }
+        
+        .room-gallery img { width: 100%; height: 500px; object-fit: cover; margin-bottom: 30px; }
+        .room-title { font-family: 'Playfair Display', serif; font-size: 3rem; margin: 0 0 10px 0; }
+        .room-description { font-size: 1.1rem; color: #444; margin-bottom: 40px; }
+        
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .info-item h4 { text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: #888; margin-bottom: 10px; }
+        .info-item p { margin: 0; font-weight: 600; }
+
+        /* Sidebar de réservation */
+        .booking-sidebar { background: var(--light-gray); padding: 40px; border-radius: 4px; position: sticky; top: 40px; height: fit-content; }
+        .price-tag { font-size: 1.8rem; font-family: 'Playfair Display', serif; margin-bottom: 20px; }
+        .price-tag span { font-size: 0.9rem; font-family: 'Inter', sans-serif; color: #666; }
+        .btn-reserve { background: black; color: white; width: 100%; padding: 18px; border: none; cursor: pointer; font-weight: bold; font-size: 1rem; transition: 0.3s; }
+        .btn-reserve:hover { opacity: 0.8; }
+
+        /* Footer */
+        footer { background: var(--light-gray); padding: 40px 5%; text-align: center; border-top: 1px solid var(--border); margin-top: 80px; }
+        .footer-nav a { margin: 0 15px; color: #666; text-decoration: none; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">Larick Industries</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="salles.html">Salles</a></li>
+                <li><a href="materiel.html">Matériel</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-login">Log in</a>
+            <a href="signup.html" class="btn-signup">Sign up</a>
+        </div>
+    </header>
+
+    <main class="room-container">
+        <section class="room-details">
+            <div class="room-gallery">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1200" alt="Salon Gabriel Interior">
+            </div>
+            
+            <h1 class="room-title">Salon Gabriel</h1>
+            <p class="room-description">
+                Un écrin de prestige alliant élégance classique et modernité. Le Salon Gabriel est l'espace idéal pour vos conseils d'administration, réceptions privées ou présentations de produits haut de gamme. Sa lumière naturelle et ses finitions soignées créent une atmosphère de sérénité et de réussite.
+            </p>
+
+            <div class="info-grid">
+                <div class="info-item">
+                    <h4>Capacité</h4>
+                    <p>Jusqu'à 50 personnes</p>
+                </div>
+                <div class="info-item">
+                    <h4>Surface</h4>
+                    <p>85 m²</p>
+                </div>
+                <div class="info-item">
+                    <h4>Équipements inclus</h4>
+                    <p>Wifi Fibre, Écran LED 85", Sonorisation</p>
+                </div>
+                <div class="info-item">
+                    <h4>Services</h4>
+                    <p>Café d'accueil, Service conciergerie</p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="booking-sidebar">
+            <div class="price-tag">600 € <span>/ jour</span></div>
+            <p style="font-size: 0.85rem; color: #666; margin-bottom: 30px;">Taxes et frais de service inclus. Annulation gratuite jusqu'à 48h.</p>
+            
+            <a href="reservation.html" style="text-decoration: none;">
+                <button class="btn-reserve">Réserver cette salle</button>
+            </a>
+            
+            <div style="margin-top: 30px; font-size: 0.8rem; color: #888;">
+                <p>✓ Disponibilité vérifiée en temps réel</p>
+                <p>✓ Paiement sécurisé</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help / FAQ</a>
+        </div>
+        <p style="font-size: 0.75rem; color: #999; margin-top: 15px;">© 2026 Larick Industries. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

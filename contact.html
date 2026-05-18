@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #ffffff; --light-gray: #f9f9f9; }
+        body { margin: 0; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; min-height: 100vh; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid #eee; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; }
+        nav a { text-decoration: none; color: black; font-size: 0.9rem; }
+        .auth-links { font-size: 0.9rem; }
+        .auth-links a { color: black; text-decoration: none; margin-left: 15px; font-weight: 500; }
+        
+        .container { padding: 60px 5%; max-width: 600px; margin: auto; flex-grow: 1; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 20px; }
+        
+        .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #eee; font-family: inherit; box-sizing: border-box; }
+        .btn-send { background: black; color: white; padding: 12px 30px; border: none; cursor: pointer; }
+
+        footer { background: var(--light-gray); padding: 40px 5%; text-align: center; }
+        footer a { margin: 0 15px; color: #666; text-decoration: none; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight:bold; letter-spacing: 1px;">LARICK INDUSTRIES</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="salles.html">Salles</a></li>
+                <li><a href="materiel.html">Matériel</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="login.html">Log in</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Contactez-nous</h1>
+        <p style="color:#666; margin-bottom:30px;">Une question spécifique ? Notre équipe vous répond sous 24h.</p>
+        <form class="contact-form">
+            <input type="text" placeholder="Nom complet" required>
+            <input type="email" placeholder="Email" required>
+            <textarea rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn-send">Envoyer le message</button>
+        </form>
+    </div>
+
+    <footer>
+        <div style="margin-bottom:20px;">
+            <a href="contact.html">Contact</a>
+            <a href="help.html">Help</a>
+            <a href="#">Mentions Légales</a>
+        </div>
+        <p style="font-size: 0.8rem; color: #999;">© 2026 Larick Industries. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

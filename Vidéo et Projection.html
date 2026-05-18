@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Vidéo & Projection - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-color: #ffffff; --text-main: #1a1a1a; --accent: #000000; --light-gray: #f9f9f9; --border: #eee; }
+        body { margin: 0; font-family: 'Inter', sans-serif; color: var(--text-main); }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid var(--border); }
+        .brand { font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
+        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
+        nav a { text-decoration: none; color: var(--text-main); font-size: 0.85rem; }
+        .auth-buttons { display: flex; gap: 15px; align-items: center; }
+        .btn-signup { background: var(--accent); color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; font-size: 0.85rem; }
+
+        .container { padding: 60px 5%; display: grid; grid-template-columns: 250px 1fr; gap: 50px; max-width: 1300px; margin: 0 auto; }
+        .sidebar h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 30px; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 15px; }
+        .sidebar a { text-decoration: none; color: #666; transition: 0.3s; }
+        .sidebar a.active { color: black; font-weight: 600; text-decoration: underline; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; }
+        .card { border: 1px solid var(--border); padding: 20px; text-align: center; transition: 0.3s; }
+        .card:hover { border-color: black; }
+        .card img { width: 100%; height: 200px; object-fit: contain; margin-bottom: 20px; }
+        .card h4 { font-family: 'Playfair Display', serif; margin: 10px 0; }
+        .price { color: #888; font-size: 0.9rem; margin-bottom: 15px; }
+        .btn-add { background: none; border: 1px solid black; padding: 8px 20px; cursor: pointer; font-size: 0.8rem; }
+        .btn-add:hover { background: black; color: white; }
+
+        footer { background: var(--light-gray); padding: 40px 5%; text-align: center; border-top: 1px solid var(--border); margin-top: 60px; }
+        .footer-nav a { margin: 0 15px; color: #666; text-decoration: none; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">Larick Industries</div>
+        <nav><ul><li><a href="index.html">Home</a></li><li><a href="salles.html">Salles</a></li><li><a href="materiel.html">Matériel</a></li></ul></nav>
+        <div class="auth-buttons"><a href="login.html" style="text-decoration:none; color:black; font-size:0.85rem;">Log in</a><a href="signup.html" class="btn-signup">Sign up</a></div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Équipements</h3>
+            <ul>
+                <li><a href="equipement-video.html" class="active">Vidéo & Projection</a></li>
+                <li><a href="sonorisation.html">Sonorisation</a></li>
+                <li><a href="mobilier.html">Mobilier</a></li>
+                <li><a href="accessoires.html">Accessoires</a></li>
+            </ul>
+        </aside>
+
+        <section>
+            <h1 style="font-family: 'Playfair Display', serif; margin-bottom: 40px;">Vidéo & Projection</h1>
+            <div class="grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&q=80&w=400" alt="Vidéoprojecteur">
+                    <h4>Projecteur Laser 4K</h4>
+                    <p class="price">120€ / jour</p>
+                    <button class="btn-add">Ajouter au devis</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&q=80&w=400" alt="Écran">
+                    <h4>Écran LED 85"</h4>
+                    <p class="price">200€ / jour</p>
+                    <button class="btn-add">Ajouter au devis</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-nav"><a href="contact.html">Contact</a><a href="help.html">Help</a></div>
+        <p style="font-size: 0.75rem; color: #999; margin-top: 15px;">© 2026 Larick Industries</p>
+    </footer>
+</body>
+</html>

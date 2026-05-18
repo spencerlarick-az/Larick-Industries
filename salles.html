@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Salles - Larick Industries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Styles partagés (Header/Footer identiques à l'accueil) */
+        :root { --bg-color: #ffffff; --text-main: #1a1a1a; --accent: #000000; --light-gray: #f9f9f9; }
+        body { margin: 0; font-family: 'Inter', sans-serif; }
+        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; border-bottom: 1px solid #eee; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav a { text-decoration: none; color: black; font-size: 0.9rem; }
+        .auth-buttons { display: flex; gap: 15px; }
+        .btn-signup { background: black; color: white; padding: 8px 20px; border-radius: 20px; text-decoration: none; }
+        
+        /* Spécifique à la page Salles */
+        .container { padding: 60px 5%; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
+        .grid-salles { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { border: 1px solid #eee; overflow: hidden; transition: 0.3s; }
+        .card:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .card img { width: 100%; height: 250px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-title { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 10px; }
+        .price { font-weight: bold; color: #555; }
+        .btn-book { display: inline-block; margin-top: 15px; text-decoration: underline; color: black; font-size: 0.9rem; }
+
+        footer { background: var(--light-gray); padding: 50px 5%; text-align: center; margin-top: 50px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-weight:bold;">Larick Industries</div>
+        <nav><ul><li><a href="index.html">Home</a></li><li><a href="salles.html">Salles</a></li><li><a href="materiel.html">Matériel</a></li></ul></nav>
+        <div class="auth-buttons"><a href="#" style="text-decoration:none; color:black; align-self:center;">Log in</a><a href="#" class="btn-signup">Sign up</a></div>
+    </header>
+
+    <div class="container">
+        <h1>Nos Espaces d'Exception</h1>
+        <div class="grid-salles">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407?auto=format&fit=crop&q=80&w=800" alt="Salle">
+                <div class="card-content">
+                    <div class="card-title">Le Loft Industriel</div>
+                    <p>Un espace brut et moderne pour vos séminaires créatifs.</p>
+                    <span class="price">À partir de 450€ / jour</span><br>
+                    <a href="#" class="btn-book">Découvrir la salle</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" alt="Salle">
+                <div class="card-content">
+                    <div class="card-title">Salon Gabriel</div>
+                    <p>Élégance classique et lumière naturelle pour vos réceptions.</p>
+                    <span class="price">À partir de 600€ / jour</span><br>
+                    <a href="#" class="btn-book">Découvrir la salle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><div style="margin-bottom:20px;"><a href="#" style="margin:0 20px; color:#666; text-decoration:none;">Contact</a><a href="#" style="margin:0 20px; color:#666; text-decoration:none;">Help</a></div><p>© 2026 Larick Industries</p></footer>
+</body>
+</html>
